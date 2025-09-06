@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>HRS | TNP - BIT Deoghar</title>
+  <meta name="description"
+    content="Human Resource Services - Connect with BIT Deoghar for talent acquisition and HR partnerships." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/img/images.jpeg" />
+</head>
+
+<body class="page">
+  <header class="topbar">
+    <div class="container topbar__content">
+      <div class="topbar__left">
+        <span>Training & Placement Cell, BIT Deoghar</span>
+      </div>
+      <div class="topbar__right">
+        <a href="mailto:tnp@bitd.ac.in">tnp@bitd.ac.in</a>
+        <span class="divider">|</span>
+        <a href="tel:+910000000000">+91 00000 00000</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__content">
+      <a href="index.html" class="brand">
+        <img src="assets/img/images.jpeg" alt="BIT Deoghar TNP" class="brand-logo" />
+        <span class="brand-text">TNP • BIT Deoghar</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="recruiters.html">Recruiters</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="alumni.html">Alumni</a></li>
+        <li><a href="startups.html">Startups</a></li>
+        <li><a class="active" href="hrs.html">HRS</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / HRS</div>
+      <h1>Human Resource Services</h1>
+      <p class="dim">Partner with us for comprehensive talent acquisition and HR solutions.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container grid grid--2">
+      <div>
+        <h2>Our HR Services</h2>
+        <div class="card">
+          <h3>Talent Acquisition</h3>
+          <ul class="list">
+            <li>Campus recruitment drives and job fairs</li>
+            <li>Pre-screened candidate profiles</li>
+            <li>Customized hiring processes</li>
+            <li>Bulk recruitment solutions</li>
+          </ul>
+        </div>
+        <div class="card mt-md">
+          <h3>HR Consulting</h3>
+          <ul class="list">
+            <li>Industry best practices guidance</li>
+            <li>Compensation benchmarking</li>
+            <li>Employee engagement strategies</li>
+            <li>Training and development programs</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Request HR Services</h2>
+        <div class="card">
+          <form id="hrsForm" class="hrs-form">
+            <div class="form-group">
+              <label for="companyName">Company Name *</label>
+              <input id="companyName" name="companyName" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactPerson">Contact Person *</label>
+              <input id="contactPerson" name="contactPerson" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="designation">Designation *</label>
+              <input id="designation" name="designation" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input id="phone" name="phone" type="tel" required />
+            </div>
+
+            <div class="form-group">
+              <label for="companySize">Company Size *</label>
+              <select id="companySize" name="companySize" required>
+                <option value="">Select Size</option>
+                <option value="1-10">1-10 employees</option>
+                <option value="11-50">11-50 employees</option>
+                <option value="51-200">51-200 employees</option>
+                <option value="201-500">201-500 employees</option>
+                <option value="501-1000">501-1000 employees</option>
+                <option value="1000+">1000+ employees</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="industry">Industry *</label>
+              <select id="industry" name="industry" required>
+                <option value="">Select Industry</option>
+                <option value="IT">Information Technology</option>
+                <option value="Finance">Banking & Finance</option>
+                <option value="Manufacturing">Manufacturing</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Education">Education</option>
+                <option value="Consulting">Consulting</option>
+                <option value="E-commerce">E-commerce</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Energy">Energy & Utilities</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service Required *</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">Select Service</option>
+                <option value="campus-drive">Campus Recruitment Drive</option>
+                <option value="job-fair">Job Fair Participation</option>
+                <option value="consulting">HR Consulting</option>
+                <option value="training">Training Programs</option>
+                <option value="internship">Internship Program</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="requirements">Specific Requirements *</label>
+              <textarea id="requirements" name="requirements" rows="3"
+                placeholder="Please describe your specific requirements, number of positions, skills needed, etc."
+                required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Preferred Timeline *</label>
+              <select id="timeline" name="timeline" required>
+                <option value="">Select Timeline</option>
+                <option value="immediate">Immediate (within 1 month)</option>
+                <option value="1-3months">1-3 months</option>
+                <option value="3-6months">3-6 months</option>
+                <option value="6-12months">6-12 months</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="submit">Submit Request</button>
+              <button class="btn btn--outline" type="reset">Reset Form</button>
+            </div>
+
+            <p id="hrsStatus" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <h2 class="center">Why Choose Our HR Services?</h2>
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>Expertise</h3>
+          <p>Years of experience in campus recruitment and talent acquisition across various industries.</p>
+        </div>
+        <div class="card">
+          <h3>Quality Talent</h3>
+          <p>Access to pre-screened, industry-ready graduates with strong technical and soft skills.</p>
+        </div>
+        <div class="card">
+          <h3>Customized Solutions</h3>
+          <p>Tailored recruitment processes and HR solutions to meet your specific business needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container grid grid--3">
+      <div>
+        <div class="brand brand--footer">
+          <img src="assets/img/images.jpeg" alt="BIT Deoghar TNP" class="brand-logo" />
+          <span>TNP • BIT Deoghar</span>
+        </div>
+        <p>
+          BIT Deoghar, Jasidih, Deoghar, Jharkhand 814142, India
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="list">
+          <li><a href="statistics.html">Placement Statistics</a></li>
+          <li><a href="team.html">TNP Team</a></li>
+          <li><a href="recruiters.html">For Recruiters</a></li>
+          <li><a href="students.html">For Students</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="list">
+          <li>Email: <a href="mailto:tnp@bitd.ac.in">tnp@bitd.ac.in</a></li>
+          <li>Phone: <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li>Office Hours: Mon–Fri, 9 AM – 5 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <small>© <span id="year"></span> Training & Placement Cell, BIT Deoghar. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('hrsForm');
+      const status = document.getElementById('hrsStatus');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        status.textContent = 'Submitting your request...';
+        status.style.color = 'var(--accent)';
+
+        setTimeout(function () {
+          status.textContent = 'Thank you! Your HR service request has been submitted. Our team will contact you within 2 business days.';
+          status.style.color = 'var(--accent-2)';
+          form.reset();
+        }, 1500);
+      });
+    })();
+  </script>
+</body>
+
+</html>

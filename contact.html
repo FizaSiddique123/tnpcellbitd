@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Contact | TNP - BIT Deoghar</title>
+  <meta name="description" content="Contact the Training & Placement Cell, BIT Deoghar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/img/images.jpeg" />
+</head>
+
+<body class="page">
+  <header class="topbar">
+    <div class="container topbar__content">
+      <div class="topbar__left">
+        <span>Training & Placement Cell, BIT Deoghar</span>
+      </div>
+      <div class="topbar__right">
+        <a href="mailto:tnp@bitd.ac.in">tnp@bitd.ac.in</a>
+        <span class="divider">|</span>
+        <a href="tel:+910000000000">+91 00000 00000</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__content">
+      <a href="index.html" class="brand">
+        <img src="assets/img/images.jpeg" alt="BIT Deoghar TNP" class="brand-logo" />
+        <span class="brand-text">TNP • BIT Deoghar</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="recruiters.html">Recruiters</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="alumni.html">Alumni</a></li>
+        <li><a href="startups.html">Startups</a></li>
+        <li><a href="hrs.html">HRS</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / Contact</div>
+      <h1>Contact</h1>
+      <p class="dim">We would love to hear from you.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container grid grid--2">
+      <div>
+        <h2>Reach Us</h2>
+        <div class="card">
+          <p><strong>Office:</strong><br />Training & Placement Cell<br />BIT Deoghar, Jasidih, Deoghar, Jharkhand
+            814142</p>
+          <p><strong>Email:</strong> tnp@bitd.ac.in</p>
+          <p><strong>Phone:</strong> +91 00000 00000</p>
+          <p class="dim">Office Hours: Mon–Fri, 9 AM – 5 PM</p>
+        </div>
+      </div>
+      <div>
+        <h2>Send a Message</h2>
+        <div class="card">
+          <form id="contactForm">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div>
+              <label for="role">I am a</label>
+              <select id="role" name="role">
+                <option>Recruiter</option>
+                <option>Student</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+              <button class="btn" type="submit">Send</button>
+            </div>
+            <p id="contactStatus" class="dim"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container grid grid--3">
+      <div>
+        <div class="brand brand--footer">
+          <img src="assets/img/images.jpeg" alt="BIT Deoghar TNP" class="brand-logo" />
+          <span>TNP • BIT Deoghar</span>
+        </div>
+        <p>
+          BIT Deoghar, Jasidih, Deoghar, Jharkhand 814142, India
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="list">
+          <li><a href="statistics.html">Placement Statistics</a></li>
+          <li><a href="team.html">TNP Team</a></li>
+          <li><a href="recruiters.html">For Recruiters</a></li>
+          <li><a href="students.html">For Students</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="list">
+          <li>Email: <a href="mailto:tnp@bitd.ac.in">tnp@bitd.ac.in</a></li>
+          <li>Phone: <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li>Office Hours: Mon–Fri, 9 AM – 5 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <small>© <span id="year"></span> Training & Placement Cell, BIT Deoghar. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('contactStatus');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        status.textContent = 'Sending...';
+        setTimeout(function () {
+          status.textContent = 'Thank you! Your message has been recorded.';
+          form.reset();
+        }, 800);
+      });
+    })();
+  </script>
+</body>
+
+</html>
